@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá 棉蘭 Medan - Indonesia</title>
+    <style>
+        /* Hiệu ứng mượt mà */
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+        }
+
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header với hiệu ứng gradient và bóng đổ */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            animation: fadeInDown 1.2s ease-out;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Thanh điều hướng Sticky */
+        nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Container chính */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Grid ảnh với hiệu ứng Hover chuyên nghiệp */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-info {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        /* Tối ưu điện thoại */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.4rem; }
+            nav { flex-wrap: wrap; }
+            nav a { margin: 5px; font-size: 0.8rem; }
+            .photo-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>想去棉蘭看山看水，看一下棉蘭美景，去除壓力，請展示10圖片。</h1>
+</header>
+
+<nav>
+    <a href="#food">棉蘭美食</a>
+    <a href="#arch">建築之美</a>
+    <a href="#view">景點</a>
+    <a href="#custom">民情風俗</a>
+</nav>
+
+<div class="container">
+
+<section id="food" style="animation-delay: 0.2s;">
+        <h2>棉蘭美食 (Medan Cuisine)</h2>
+        <p class="description">Medan dijuluki sebagai 'Surga Kuliner' di Indonesia. Perpaduan antara bumbu Jawa, teknik memasak Tionghoa, dan cita rasa India menciptakan hidangan yang tak terlupakan seperti Bika Ambon atau Mie Medan yang tersohor.</p>
+        <div class="photo-grid">
+            <div class="card"><img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=500" alt="Soto Medan"><div class="card-info">Soto Medan</div></div>
+            <div class="card"><img src="https://moondoggiesmusic.com/wp-content/uploads/2020/01/Resep-Bika-Ambon-1536x864.png"><div class="card-info">Bika Ambon</div></div>
+            <div class="card"><img src="https://asset-2.tstatic.net/medan/foto/bank/images/ilustrasi-nasi-padang.jpg"><div class="card-info">Nasi Padang Medan</div></div>
+            <div class="card"><img src="https://tse3.mm.bing.net/th/id/OIP.qGa4C5uDGxMNhGg_L3MvfQHaE8?pid=Api&h=220&P=0"><div class="card-info">Satay Medan</div></div>
+            <div class="card"><img src="https://i.ytimg.com/vi/0sz6gzR07hE/maxresdefault.jpg">Mie Goreng Medan</div></div>
+        </div>
+    </section>
+
+    <section id="arch" style="animation-delay: 0.4s;">
+        <h2>建築之美 (Architecture)</h2>
+        <p class="description">KArsitektur di Medan adalah sebuah museum yang hidup. Anda akan menjumpai Istana Maimun yang bergaya Islami, rumah tua Tjong A Fie yang kental dengan nuansa Tionghoa, hingga kantor pos kota dari zaman kolonial Belanda</p>
+        <div class="photo-grid">
+            <div class="card"><img src="https://www.agoda.com/wp-content/uploads/2024/10/Maimun-Palace-Istana-Maimoon-Medan-Indonesia.jpg"><div class="card-info">Cung điện Maimun</div></div>
+            <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.ieFY5YOdoxrTOgsY-z9hgAHaEK?pid=Api&h=220&P=0"><div class="card-info">Đại thánh đường Medan</div></div>
+            <div class="card"><img src="https://png.pngtree.com/thumb_back/fw800/background/20220403/pngtree-dutch-colonial-architecture-africa-architecture-national-landmark-photo-image_2068593.jpg"><div class="card-info">Kiến trúc thuộc địa Hà Lan</div></div>
+            <div class="card"><img src="https://image.popbela.com/post/20250511/upload_52af7a92e7df5bf8287fe1add6858e12.png?tr=w-3840"><div class="card-info">Chùa Maha Vihara</div></div>
+            <div class="card"><img src="https://tse1.mm.bing.net/th/id/OIP.mD2ly3YhhQOT-6t0y2o_kgHaE8?pid=Api&h=220&P=0"><div class="card-info">Nhà cổ Tjong A Fie</div></div>
+        </div>
+    </section>
+
+    <section id="view" style="animation-delay: 0.6s;">
+      <h2>景點 (Beautiful Landmarks)</h2>
+        <p class="description">Hanya beberapa jam berkendara dari Medan, terdapat Danau Toba – danau vulkanik terbesar ở dunia, tempat yang sangat indah untuk menghilangkan segala kepenatan. Selain itu, air terjun yang megah dan dataran tinggi Berastagi selalu menanti Anda.</p>
+        <div class="photo-grid">
+            <div class="card"><img src="https://tse4.mm.bing.net/th/id/OIP.0G77TXZai0KTeZOME3RPzgHaEK?pid=Api&h=220&P=0"><div class="card-info">Hồ Toba hùng vĩ</div></div>
+            <div class="card"><img src="https://www.yong.vn/Content/images/cities/kinh-nghiem-du-lich-phuot-dao-samosir.jpg"><div class="card-info">Đảo Samosir</div></div>
+            <div class="card"><img src="https://tse2.mm.bing.net/th/id/OIP.3PjI-xvAn1YLhJufglIQ_QHaFn?pid=Api&h=220&P=0"><div class="card-info">Thác Sipiso-piso</div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500" alt="Berastagi"><div class="card-info">Cao nguyên Berastagi</div></div>
+            <div class="card"><img src="https://cdnmedia.baotintuc.vn/Upload/3qVxwVtNEPp6Wp9kkF77g/files/2021/05/06/sinabung-060521.jpg">Núi lửa Sinabung</div></div>
+        </div>
+</section>
+
+    <section id="custom" style="animation-delay: 0.8s;">
+      <h2>民情風俗 (Customs & Life)</h2>
+        <p class="description"><br>
+        </p>
+        <div class="photo-grid">
+            <div class="card"><img src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=500" alt="Market"><div class="card-info">Chợ truyền thống Pajak</div></div>
+            <div class="card"><img src="https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/1/19/7bcd15d1672c4eb3aa1a636d1b8fa5a9">Nụ cười Medan</div></div>
+            <div class="card"><img src="https://cdn0-production-images-kly.akamaized.net/byjzA3hi4eACFoJ1kLWJpwuR5Qs=/1280x720/smart/filters:quality(75):strip_icc()/kly-media-production/medias/5062482/original/059802200_1734932742-1734931257397_fungsi-tari-tor-tor.jpg">Điệu múa Tor-tor</div></div>
+            <div class="card"><img src="https://c8.alamy.com/comp/2pxndct/traditional-batak-village-on-sumatra-indonesia-2pxndct.jpg">Làng cổ Batak</div></div>
+            <div class="card"><img src="https://cdn.shopify.com/s/files/1/1238/0520/files/d_o_Java_b_ng_xe_Becak_480x480.jpg?v=1679760537">Xe Becak truyền thống</div></div>
+        </div>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Medan Tourism - Indonesia. Hãy để vẻ đẹp này xóa tan áp lực của bạn.</p>
+    <p style="font-size: 0.7rem; color: #666;">Trang web được thiết kế tối ưu cho điện thoại và máy tính.</p>
+</footer>
+
+</body>
+</html>
